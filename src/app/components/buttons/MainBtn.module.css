@@ -1,14 +1,22 @@
-.mainBtn{
-    padding: 12px 24px;
-    border-radius: 200px;
-    border: none;
-    font-weight: 700;
-    font-size: 14px;
+.mainBtn {
+  padding: 12px 24px;
+  border-radius: 200px;
+  border: none;
+  font-size: var(--font-14);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-height-14);
 
-    background: linear-gradient(to right, #1772FF, #64A0FF);
-    color: #FFFFFF;
-    
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}   
+  background: linear-gradient(to right, #1772ff, #64a0ff);
+  color: var(--color-white);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.mainBtn:disabled {
+  background: var(--block-element-color);
+  color: var(--secondary-text-color);
+}

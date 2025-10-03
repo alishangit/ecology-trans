@@ -1,16 +1,28 @@
 :root {
   --main-text-color: #0b0b0b;
   --secondary-text-color: #9d9b9b;
+  --text-field-color: #f9f9f9;
+  --border-color: #eeeeee;
+  --block-status-color: #f82222;
+  --main-background-color: #fafafa;
+  --block-element-color: #f3f3f3;
+  --color-white: #ffffff;
 
-  --block-error-color: #f82222;
+  --font-10: 10px;
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-18: 18px;
 
-  --block-background-color: #f3f3f3;
-
-  --font-size-small: 12px;
-
+  --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 
-  --font-height: 12px;
+  --font-height-12: 12px;
+  --font-height-14: 14px;
+  --font-height-16: 16px;
+  --font-height-18: 18px;
 }
 
 html,
