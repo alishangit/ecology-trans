@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./TabItem.module.css";
 import Icon from "../../../../../icons/Icon";
 import { IconListEnum } from "../../../../../icons/icons-list.enum";
@@ -6,19 +5,24 @@ import { IconListEnum } from "../../../../../icons/icons-list.enum";
 interface ITabItem {
   title: string;
   iconName: IconListEnum;
+  isActive?: boolean;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-const TabItem = ({ title, iconName }: ITabItem) => {
+const TabItem = ({ title, iconName, isActive = false, onClick }: ITabItem) => {
   return (
-    <div className={classes.tabItem}>
+    <button
+      className={`${classes.tabItem} ${isActive ? classes.active : ""}`}
+      onClick={onClick}
+    >
       <Icon
         name={iconName}
         width={24}
         height={24}
-        color="var( --secondary-text-color)"
+        color={isActive ? "var(--cta-color)" : "var(--secondary-text-color)"}
       />
-      <p>{title}</p>
-    </div>
+      <p className={classes.tabItemTitle}>{title}</p>
+    </button>
   );
 };
 

@@ -1,11 +1,14 @@
 :root {
+  --cta-color: #1772ff;
+  --cta-background-color: #c1d9ff33;
   --main-text-color: #0b0b0b;
   --secondary-text-color: #9d9b9b;
   --text-field-color: #f9f9f9;
   --border-color: #eeeeee;
   --block-status-color: #f82222;
+  --block-status-bg-color: #ffd1d133;
   --main-background-color: #fafafa;
-  --block-element-color: #f3f3f3;
+  --blocked-color: #f3f3f3;
   --color-white: #ffffff;
 
   --font-10: 10px;
@@ -110,7 +113,8 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  /* font-family: inherit; */
+  font-family: "Manrope", sans-serif;
   vertical-align: baseline;
 }
 
@@ -131,6 +135,7 @@ section {
 
 body {
   line-height: 1;
+  background-color: var(--main-background-color);
 }
 
 ol,
@@ -154,4 +159,13 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
 }
