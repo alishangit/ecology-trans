@@ -1,9 +1,17 @@
+:root {
+  --main-text-color: #0b0b0b;
+  --secondary-text-color: #9d9b9b;
 
+  --block-error-color: #f82222;
 
+  --block-background-color: #f3f3f3;
 
+  --font-size-small: 12px;
 
+  --font-weight-medium: 500;
 
-
+  --font-height: 12px;
+}
 
 html,
 body,
@@ -127,7 +135,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
