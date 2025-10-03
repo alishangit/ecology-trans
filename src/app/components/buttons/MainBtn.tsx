@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './MainBtn.module.css'
-import { Manrope } from 'next/font/google';
 import { manrope } from '@/app/layout';
 import Icon from '../../../../icons/Icon';
 import { IconListEnum } from '../../../../icons/icons-list.enum';
