@@ -1,0 +1,37 @@
+.container {
+    width: 343px;
+}
+
+
+.title {
+    width: 304px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.ecoTrans {
+    color: #1772FF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.userName {
+    color: #0B0B0B;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 16px;
+    background-color: red;
+    border-radius: 24px;
+    
+}       
+
+.inoutData {
+}
