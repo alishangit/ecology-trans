@@ -1,0 +1,29 @@
+import React from 'react';
+
+interface IIcon {
+  width: number;
+  height: number;
+  color: string;
+}
+
+const PlusIcon = ({ width, height, color }: IIcon) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M8 0.5C8.46024 0.5 8.83333 0.873096 8.83333 1.33333V7.16667H14.6667C15.1269 7.16667 15.5 7.53976 15.5 8C15.5 8.46024 15.1269 8.83333 14.6667 8.83333H8.83333V14.6667C8.83333 15.1269 8.46024 15.5 8 15.5C7.53976 15.5 7.16667 15.1269 7.16667 14.6667V8.83333H1.33333C0.873096 8.83333 0.5 8.46024 0.5 8C0.5 7.53976 0.873096 7.16667 1.33333 7.16667L7.16667 7.16667V1.33333C7.16667 0.873096 7.53976 0.5 8 0.5Z"
+        fill={color}
+        />
+    </svg>
+
+  );
+};
+
+export default PlusIcon;
