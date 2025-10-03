@@ -5,14 +5,26 @@
 
   padding: 18px 16px;
   border: 1px solid transparent;
+  border-radius: 16px;
   box-sizing: border-box;
 
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-medium);
   line-height: var(--font-height);
+}
+
+.inputMain::placeholder {
   color: var(--secondary-text-color);
 }
 
+.inputMain:focus::placeholder {
+  color: var(--main-text-color);
+}
+
 .errorBlock {
-  color: var(--block-error-color);
+  border: 1px solid var(--block-color);
+}
+
+.inputMain:disabled {
+  background-color: var(--blocked-color);
 }

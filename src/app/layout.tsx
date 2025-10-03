@@ -1,13 +1,14 @@
-import type { Metadata } from 'next';
-import { Manrope } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
+import "./globals.css";
 
-export const manrope = Manrope({ subsets: ['cyrillic'] });
-
+const manrope = Manrope({
+  subsets: ["cyrillic"],
+});
 
 export const metadata: Metadata = {
-  title: 'Эко Транс',
-  description: 'main'
+  title: "Эко Транс",
+  description: "main",
 };
 
 export interface LayoutProps {
@@ -17,9 +18,7 @@ export interface LayoutProps {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="ru">
-      <body className={manrope.className}>
-       {children}
-      </body>
+      <body className={manrope.className}>{children}</body>
     </html>
   );
 }

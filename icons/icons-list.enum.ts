@@ -1,5 +1,3 @@
 export enum IconListEnum {
-  plusIcon = 'plusIcon',
-
- 
+  plusIcon = "plusIcon",
 }
