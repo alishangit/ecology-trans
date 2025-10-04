@@ -4,6 +4,7 @@ import Input from "./components/input/Input";
 import HistoryBlock from "./components/statistic/history/HistoryBlock/HistoryBlock";
 import TabContainer from "./components/tabBar/TabContainer/TabContainer";
 import EarningsBlock from "./components/statistic/earning/EarningsBlock/EarningsBlock";
+import Modal from "./components/modal/Modal";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <Input />
           <EarningsBlock />
           <HistoryBlock />
+          <Modal/>
         </main>
       </Container>
       <TabContainer />
