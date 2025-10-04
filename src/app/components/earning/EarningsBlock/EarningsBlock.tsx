@@ -1,7 +1,7 @@
 import React from "react";
 import ContentContainer from "@/app/components/containers/ContentContainer/ContentContainer";
 import EarningItem from "../EarningItem/EarningItem";
-import { IconListEnum } from "../../../../../../icons/icons-list.enum";
+import { IconListEnum } from "../../../../../icons/icons-list.enum";
 
 const EarningsBlock = () => {
   return (
