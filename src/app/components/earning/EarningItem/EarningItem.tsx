@@ -7,6 +7,7 @@ import AmountItem from "../Amount/AmountItem";
 interface IEarningItem {
   iconName: IconListEnum;
   title: string;
+  status?: "active" | "blocked";
 }
 
 const EarningItem = ({ iconName, title }: IEarningItem) => {

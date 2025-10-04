@@ -13,7 +13,7 @@ const AmountItem = ({ amount, status = "active" }: AmountItemProps) => {
         status === "blocked" ? classes.blocked : ""
       }`}
     >
-      <p className={classes.amountItemText}>{amount}</p>
+      <p className={classes.amountItemAmount}>{amount}</p>
     </div>
   );
 };
