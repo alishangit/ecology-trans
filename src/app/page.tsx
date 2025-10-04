@@ -3,9 +3,11 @@ import MainBtn from "./components/buttons/MainBtn";
 import Input from "./components/input/Input";
 import HistoryBlock from "./components/statistic/history/HistoryBlock/HistoryBlock";
 import TabContainer from "./components/tabBar/TabContainer/TabContainer";
+
 import EarningsBlock from "./components/earning/EarningsBlock/EarningsBlock";
 import EarningBy from "./components/earning/EarningBy/EarningBy";
 import classes from "./page.module.css";
+
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
           </div>
           <EarningsBlock />
           <HistoryBlock />
+          <Modal/>
         </main>
       </Container>
       <TabContainer />
