@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./EarningItem.module.css";
-import { IconListEnum } from "../../../../../../icons/icons-list.enum";
-import Icon from "../../../../../../icons/Icon";
+import { IconListEnum } from "../../../../../icons/icons-list.enum";
+import Icon from "../../../../../icons/Icon";
 import AmountItem from "../Amount/AmountItem";
 
 interface IEarningItem {
@@ -16,7 +16,7 @@ const EarningItem = ({ iconName, title }: IEarningItem) => {
         <Icon name={iconName} width={24} height={24} color="var(--cta-color)" />
         <p className={classes.earningItemTitle}>{title}</p>
       </div>
-      <AmountItem amount="12 500 ₽" status="blocked" />
+      <AmountItem amount="12 500 ₽" />
     </div>
   );
 };
