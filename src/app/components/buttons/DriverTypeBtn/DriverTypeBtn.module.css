@@ -1,0 +1,35 @@
+.driverTypeBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+
+  font-size: var(--font-size-12);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-height-12);
+  color: var(--secondary-text-color);
+}
+
+.driverTypeBtn:last-child {
+  margin-bottom: 0;
+}
+
+.driverTypeInput {
+  appearance: none;
+  position: absolute;
+}
+
+.driverTypeIcon {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+}
+
+.driverTypeInput:checked + .driverTypeIcon {
+  border: 1px solid var(--cta-color);
+  box-shadow: inset 0 0 0 4px var(--cta-color);
+}
+.checked{
+      color: var(--main-text-color);
+}

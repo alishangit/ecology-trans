@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16;
+}
+
+.forgotPassword {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 8px;
+
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-height-14);
+  color: var(--secondary-text-color);
+}
+
+.driverTypeTitle {
+  margin: 16px 0 8px;
+
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-height-14);
+  color: var(--main-text-color);
+}

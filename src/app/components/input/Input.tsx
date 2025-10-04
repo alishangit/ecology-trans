@@ -9,21 +9,26 @@ interface IInput {
   type?: string;
   placeholder?: string;
   error?: FieldError;
+  labelTitle?: string;
 }
 const Input = ({
   disabled = false,
   type,
   error,
   placeholder = "Введите пароль",
+  labelTitle,
 }: IInput) => {
   return (
     <>
-      <input
-        type={type}
-        placeholder={placeholder}
-        className={`${classes.inputMain} ${error ? classes.inputError : ""}`}
-        disabled={disabled}
-      />
+      <label className={classes.labelMain} htmlFor="">
+        {labelTitle}
+        <input
+          type={type}
+          placeholder={placeholder}
+          className={`${classes.inputMain} ${error ? classes.inputError : ""}`}
+          disabled={disabled}
+        />
+      </label>
     </>
   );
 };

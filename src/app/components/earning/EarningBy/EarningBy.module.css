@@ -1,7 +1,7 @@
 .earningByFlex {
   display: flex;
   gap: 16px;
-  min-width: 100px;
+  min-width: 70px;
   max-width: 100%;
   width: auto;
 }
