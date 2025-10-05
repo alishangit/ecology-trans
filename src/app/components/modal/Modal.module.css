@@ -1,55 +1,42 @@
 .modal {
-    padding: 24px 16px;
-    background-color: #FFFFFF;
-    width: 100%;
-    max-width: 375px;
-    box-sizing: border-box;
-    margin: 20 auto;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-
-
+  padding: 24px 16px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 375px;
+  box-sizing: border-box;
+  margin: 20 auto;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 
 .line {
-    height: 4px;
-    width: 48px;
-    background-color: #EEEEEE;
-    margin: 0 auto 24px;
+  height: 4px;
+  width: 48px;
+  background-color: #eeeeee;
+  margin: 0 auto 24px;
 }
 
 .modalTitle {
-    width: 343px;
-    text-align: center;
-    line-height: 130%;
-    margin-bottom: 24px;
+  width: 343px;
+  text-align: center;
+  line-height: 130%;
+  margin-bottom: 24px;
 }
 
 .title {
-    font-size: 16px;
-    margin-bottom: 8px;
-    font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
 
 .subTitle {
-    font-size: 12px;
-    font-weight: 500;
-    color: #9D9B9B;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9d9b9b;
 }
 
-.modalButtonsConfirmed {
-    padding: 17px 125px;
-    color: #FFFFFF;
-    background: linear-gradient(to right, #1772FF, #64A0FF);
-    border-radius: 200px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 8px #17171714;
-}
-
-.modalButtonsCancel {
-    padding: 17px 134px;
-    color: #1772FF;
-    border: 1px solid #1772FF;
-    border-radius: 200px;
-
+.buttonSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

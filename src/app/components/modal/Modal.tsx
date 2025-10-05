@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Modal.module.css";
+import MainBtn from "../buttons/MainBtn";
 
 const Modal = () => {
   return (
@@ -13,9 +14,9 @@ const Modal = () => {
           После выбора автомобиля он сбрасывается в системе у других водителей
         </p>
       </div>
-      <div>
-        <button className={classes.modalButtonsConfirmed}>Подтвердить</button>
-        <button className={classes.modalButtonsCancel}>Отменить</button>
+      <div className={classes.buttonSection}>
+        <MainBtn title="Подтвердить" />
+        <MainBtn title="Отменить" button="secondary" />
       </div>
     </div>
   );
