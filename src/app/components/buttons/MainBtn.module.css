@@ -1,22 +1,31 @@
 .mainBtn {
-  padding: 12px 24px;
-  border-radius: 200px;
-  border: none;
-  font-size: var(--font-size-14);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--font-height-14);
-
-  background: linear-gradient(to right, #1772ff, #64a0ff);
-  color: var(--color-white);
-
-  display: flex;
+  all: unset;
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: center;
   align-items: center;
   gap: 8px;
 
-  cursor: pointer;
+  border-radius: 200px;
+  border: none;
+  box-sizing: border-box;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-height-14);
 }
 
 .mainBtn:disabled {
   background: var(--block-element-color);
   color: var(--secondary-text-color);
+}
+
+.button-default {
+  background: linear-gradient(to right, #1772ff, #64a0ff);
+  color: var(--color-white);
+}
+
+.button-secondary {
+  background-color: var(--color-white);
+  border: 1px solid var(--cta-color);
+  color: var(--cta-color);
 }
