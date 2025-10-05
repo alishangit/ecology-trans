@@ -8,6 +8,7 @@ import classes from "./LoginForm.module.css";
 import DriverTypeBtn from "../../buttons/DriverTypeBtn/DriverTypeBtn";
 import Container from "../../containers/Container";
 import AuthFormHeader from "../AuthFormHeader/AuthFormHeader";
+import AuthLogo from "../AuthLogo/AuthLogo";
 
 const LoginForm = () => {
   const [selectedType, setSelectedType] = useState<string | null>(null);
@@ -18,7 +19,8 @@ const LoginForm = () => {
   return (
     <div>
       <Container>
-        <ContentContainer>
+        <AuthLogo />
+        <ContentContainer padding="large">
           <AuthFormHeader
             title="С возвращением!"
             text="Войдите, чтобы продолжить работу и контролировать свои рейсы"
@@ -30,6 +32,7 @@ const LoginForm = () => {
             />
             <Input labelTitle="Пароль" />
           </form>
+
           <Link href="#" className={classes.forgotPassword}>
             Забыли пароль?
           </Link>
