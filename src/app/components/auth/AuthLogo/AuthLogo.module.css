@@ -1,0 +1,13 @@
+.authLogo {
+  align-items: center;
+  text-align: center;
+
+  padding: 16px 0 24px;
+}
+
+.authLogoTitle {
+  font-size: 34px;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-size-14);
+  color: var(--cta-color);
+}
