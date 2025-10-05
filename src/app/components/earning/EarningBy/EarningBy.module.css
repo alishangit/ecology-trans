@@ -13,14 +13,14 @@
 }
 
 .earningByTitle {
-  font-size: var(--font-10);
+  font-size: var(--font-size-10);
   font-weight: var(--font-weight-medium);
   line-height: var(--font-height-10);
   color: var(--secondary-text-color);
 }
 
 .earningByPrice {
-  font-size: var(--font-12);
+  font-size: var(--font-size-12);
   font-weight: var(--font-weight-bold);
   line-height: var(--font-height-12);
   color: var(--main-text-color);

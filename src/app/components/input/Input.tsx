@@ -22,13 +22,14 @@ const Input = ({
     <>
       <label className={classes.labelMain} htmlFor="">
         {labelTitle}
-        <input
-          type={type}
-          placeholder={placeholder}
-          className={`${classes.inputMain} ${error ? classes.inputError : ""}`}
-          disabled={disabled}
-        />
       </label>
+      <input
+        id=""
+        type={type}
+        placeholder={placeholder}
+        className={`${classes.inputMain} ${error ? classes.inputError : ""}`}
+        disabled={disabled}
+      />
     </>
   );
 };

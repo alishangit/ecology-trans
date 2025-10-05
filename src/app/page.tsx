@@ -7,7 +7,7 @@ import TabContainer from "./components/tabBar/TabContainer/TabContainer";
 import EarningsBlock from "./components/earning/EarningsBlock/EarningsBlock";
 import EarningBy from "./components/earning/EarningBy/EarningBy";
 import classes from "./page.module.css";
-
+import Modal from "./components/modal/Modal";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           <EarningsBlock />
           <HistoryBlock />
-          <Modal/>
+          <Modal />
         </main>
       </Container>
       <TabContainer />

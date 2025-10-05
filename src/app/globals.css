@@ -11,11 +11,11 @@
   --blocked-color: #f3f3f3;
   --color-white: #ffffff;
 
-  --font-10: 10px;
-  --font-12: 12px;
-  --font-14: 14px;
-  --font-16: 16px;
-  --font-18: 18px;
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -112,9 +112,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  /* font-family: inherit; */
-  font-family: "Manrope", sans-serif;
+  font-size: inherit;
+  font-family: inherit;
   vertical-align: baseline;
   text-decoration: none;
 }
@@ -169,4 +168,15 @@ button {
   width: auto;
   overflow: visible;
   background: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+::placeholder {
+  font-family: inherit;
 }
