@@ -1,3 +1,13 @@
+.labelMain {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: var(--font-size-14) !important;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-size-14);
+  color: var(--main-text-color);
+}
+
 .inputMain {
   all: unset;
 
@@ -13,16 +23,6 @@
   line-height: var(--font-height-12);
 
   background-color: var(--text-field-color);
-}
-
-.labelMain {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: var(--font-size-14);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--font-14);
-  color: var(--main-text-color);
 }
 
 .inputMain::placeholder {
