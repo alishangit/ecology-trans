@@ -3,8 +3,8 @@ import classes from "./Modal.module.css";
 import MainBtn from "../buttons/MainBtn";
 
 interface IModal {
-    title?: string
-    text?: string
+    title: string
+    text: string
 }
 
 const Modal = ({title, text}: IModal) => {
@@ -12,12 +12,8 @@ const Modal = ({title, text}: IModal) => {
     <div className={classes.modal}>
       <div className={classes.line}></div>
       <div className={classes.modalTitle}>
-        <h3 className={classes.title}>
-          Вы действительно уверены, что хотите выбрать Название авто
-        </h3>
-        <p className={classes.subTitle}>
-          После выбора автомобиля он сбрасывается в системе у других водителей
-        </p>
+        <h3 className={classes.title}>{title}</h3>
+        <p className={classes.subTitle}>{text}</p>
       </div>
       <div className={classes.buttonSection}>
         <MainBtn title="Подтвердить" />
