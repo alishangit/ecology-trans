@@ -22,7 +22,10 @@ export default function Home() {
           </div>
           <EarningsBlock />
           <HistoryBlock />
-          <Modal />
+          <Modal 
+            title="Вы действительно уверены, что хотите выбрать Название авто"
+            text="После выбора автомобиля он сбрасывается в системе у других водителей"
+          />
         </main>
       </Container>
       <TabContainer />
